@@ -1,0 +1,23 @@
+    if prompt := st.chat_input('How can I help you?'):
+        st.session_state.messages.append({'role':'user','content':prompt})
+        with st.chat_message('user', avatar= './assets/investor_avatar.jpg'):
+            st.markdown(prompt)
+
+            #enable conversation
+        with st.chat_message('assistant', avatar='./assets/banks_canada.jpg'):
+            message_placeholder = st.empty()
+
+            full_response = ''
+            query = prompt
+            result = qa({"question":query})
+            assistant_response = result['answer']
+        
+
+        for chunk in assistant_response.split():
+            full_response += chunk + " "
+            time.sleep(0.05)
+            message_placeholder.markdown(full_response+ '||')
+
+        message_placeholder.markdown(full_response)
+
+        st.session_state.messages.append({"role":'assistant', 'content':full_response})
