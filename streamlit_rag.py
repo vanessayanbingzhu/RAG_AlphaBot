@@ -14,8 +14,9 @@ import time
  
 # section 2.setup OpenAI LLM and Embedding models
  
-load_dotenv()
-OPENAI_API_KEY  = os.getenv("openai_api_key")  
+# load_dotenv()
+# OPENAI_API_KEY  = os.getenv("openai_api_key")  
+os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 
 llm = OpenAI(temperature=0.01)
 embeddings = OpenAIEmbeddings(model="text-embedding-ada-002") 
