@@ -35,7 +35,7 @@ embeddings = OpenAIEmbeddings(model="text-embedding-ada-002")
  
  
 # section 5. Create Streamlit front end
- !pwd
+
 def main():
     vectorstore = Chroma(persist_directory='./chromadb/', embedding_function=embeddings)
 
