@@ -1,6 +1,7 @@
  
 # section 1.Load needed packages functions
- 
+ __import__('pysqlite3')
+import sys
 import streamlit as st
 from langchain.llms import OpenAI
 from langchain.embeddings import OpenAIEmbeddings
@@ -11,9 +12,11 @@ from langchain.chains import RetrievalQA
 from dotenv import load_dotenv
 import os
 import time
- 
+
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 # section 2.setup OpenAI LLM and Embedding models
- 
+
 # load_dotenv()
 # OPENAI_API_KEY  = os.getenv("openai_api_key")  
 os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
@@ -34,7 +37,7 @@ embeddings = OpenAIEmbeddings(model="text-embedding-ada-002")
 # section 5. Create Streamlit front end
  !pwd
 def main():
-    vectorstore = Chroma(persist_directory='~/chromadb/', embedding_function=embeddings)
+    vectorstore = Chroma(persist_directory='./chromadb/', embedding_function=embeddings)
 
     retriever = vectorstore.as_retriever(search_kwargs={'k':4})
 
