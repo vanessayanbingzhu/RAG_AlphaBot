@@ -34,7 +34,7 @@ embeddings = OpenAIEmbeddings(model="text-embedding-ada-002")
 # section 5. Create Streamlit front end
  
 def main():
-    vectorstore = Chroma(persist_directory='./chromadb/', embedding_function=embeddings)
+    vectorstore = Chroma(persist_directory='/chromadb/', embedding_function=embeddings)
 
     retriever = vectorstore.as_retriever(search_kwargs={'k':4})
 
