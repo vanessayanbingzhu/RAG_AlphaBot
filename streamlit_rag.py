@@ -65,7 +65,7 @@ def main():
         if msg['role'] == 'user':
             avatar = './assets/investor_avatar.jpg'
         elif msg['role'] == 'assistant':
-            avatar = './assets/banks_canada.jpg'
+            avatar = './assets/Alpha_avatar.jpg'
         with st.chat_message(msg['role'], avatar=avatar):
             st.markdown(msg['content'])
 
@@ -76,8 +76,8 @@ def main():
 
         response = qa.invoke(prompt)
         msg = response['result']
-        st.session_state.messages.append({'role':"assistant", 'avatar':"./assets/banks_canada.jpg",'content':msg})
-        st.chat_message("assistant", avatar = './assets/banks_canada.jpg').write(msg)
+        st.session_state.messages.append({'role':"assistant", 'avatar':"./assets/Alpha_avatar.jpg",'content':msg})
+        st.chat_message("assistant", avatar = './assets/Alpha_avatar.jpg').write(msg)
 
 if __name__=='__main__':
     main()
