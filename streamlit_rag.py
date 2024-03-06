@@ -60,7 +60,7 @@ def main():
         return_source_documents=False
         )
 
-    st.image('./assets/fintech-header.png')
+    st.image('./assets/header.jpg')
     st.title('📈🤖 Alpha Bot')
 
     # with st.sidebar:
