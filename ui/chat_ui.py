@@ -3,11 +3,10 @@ import re
 
 import streamlit as st
 
-root_url="https://github.com/vanessayanbingzhu/RAG_AlphaBot/tree/main/assets"
 user_avatar='https://preview.redd.it/d1nhcalbqn1b1.png?width=511&format=png&auto=webp&s=7084cb3777d628927cb623e735c9a0d2de5c5bf7'
-bot_avatar='https://upload.wikimedia.org/wikipedia/commons/a/a1/Greek_lc_alpha.svg'
+# bot_avatar='https://upload.wikimedia.org/wikipedia/commons/a/a1/Greek_lc_alpha.svg'
 # user_avatar='assets/investor_avatar.jpg'
-# bot_avatar='assets/banks_canada.jpg'
+bot_avatar='assets/robot.jpg'
 
 def format_message(text):
     """
