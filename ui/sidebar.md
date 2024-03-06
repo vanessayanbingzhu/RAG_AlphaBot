@@ -11,6 +11,7 @@
 ## Get Started
 Sample questions you can try with AlphaBot:
 
-- Can you provide me some highlight information from RBC earnings call 2024Q1?
-- Can you summarize RBC's risk appetite in a few bullet points concisely?
+- What was TD bank CET1 ratio in 2024Q1?
+- Can you tell me 3 chanllenges that CIBC is facing based on 2024Q1 earnings call?
+- What are the question discussed in BMO 2024Q1 earnings call?
 - What is the major challenges that RBC is facing based on 2024Q1 earnings call?
