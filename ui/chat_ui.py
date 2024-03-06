@@ -55,7 +55,7 @@ def message_func(message):
         message_alignment = "flex-start"
         message_bg_color = "#D3D3D3"
         avatar_class = "bot-avatar"
-        # text = format_message(text)
+        text = format_message(text)
 
         st.write(
             f"""
