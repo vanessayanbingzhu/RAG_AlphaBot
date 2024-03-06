@@ -1,7 +1,8 @@
 # This code use MultiQuery chain 
 
 # section 1.Load needed packages functions
- 
+__import__('pysqlite3')
+import sys
 import streamlit as st
 from langchain.llms import OpenAI
 from langchain.embeddings import OpenAIEmbeddings
@@ -15,7 +16,9 @@ import os
 import time
 
 from ui.chat_ui import message_func, user_avatar, bot_avatar
- 
+
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 # section 2.setup OpenAI LLM and Embedding models
  
 # load_dotenv()
