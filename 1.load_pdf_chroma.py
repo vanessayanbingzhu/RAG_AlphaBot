@@ -29,6 +29,10 @@ for file in os.listdir('./data/'):
     if 'Earning_Speech' in file:
         pdf_path = f'./data/{file}'
         loader = PyPDFLoader(pdf_path)
+        loaded_data = loader.load()
+        bank_name = file.split('_')[0]
+        for i in range(len(loaded_data)):
+            loaded_data[i].metadata.update({'bank':bank_name})
         documents.extend(loader.load())
 
 text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
