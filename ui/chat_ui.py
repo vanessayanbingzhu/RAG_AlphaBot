@@ -61,7 +61,8 @@ def message_func(message):
             f"""
                 <div style="display: flex; align-items: center; margin-bottom: 10px; justify-content: {message_alignment};">
                     <img src="{bot_avatar}" class="{avatar_class}" alt="avatar" style="width: 30px; height: 30px;" />
-                    <div style="background: {message_bg_color}; color: black; border-radius: 20px; padding: 10px; margin-right: 5px; margin-left: 5px; max-width: 75%; font-size: 14px;">
+                    # <div style="background: {message_bg_color}; color: black; border-radius: 20px; padding: 10px; margin-right: 5px; margin-left: 5px; max-width: 75%; font-size: 14px;">
+                    <div style="background: {message_bg_color}; color: black; border-radius: 10px; padding: 5px; margin-right: 2px; margin-left: 5px; max-width: 140%; font-size: 14px;">
                         {text} \n </div>                    
                 </div>
                 """,
