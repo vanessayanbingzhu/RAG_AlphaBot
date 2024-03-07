@@ -45,7 +45,7 @@ def message_func(message):
                 <div style="display: flex; align-items: center; margin-bottom: 10px; justify-content: {message_alignment};">
                     <div style="background: {message_bg_color}; color: white; border-radius: 20px; padding: 10px; margin-right: 5px; max-width: 75%; font-size: 14px;">
                         {text} \n </div>
-                    <img src="{user_avatar}" class="{avatar_class}" alt="avatar" style="width: 50px; height: 50px;" />
+                    <img src="{user_avatar}" class="{avatar_class}" alt="avatar" style="width: 40px; height: 40px;" />
                 </div>
                 """,
             unsafe_allow_html=True,
