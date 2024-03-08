@@ -16,3 +16,11 @@ Sample questions you can try with AlphaBot:
 - Can you provide me some highlight information from RBC earnings call 2024Q1?
 - Can you summarize RBC's risk appetite in a few bullet points concisely?
 - What is the major challenges that RBC is facing based on 2024Q1 earnings call?
+
+## Documentation 
+https://vanessas-organization-3.gitbook.io/alphabot-documentation/
+
+
+
+
+
