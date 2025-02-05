@@ -1,6 +1,6 @@
 # AlphaBot
 
-🤖 AlphaBot is designed to simplify the way you interact with and understand the vast amount of information presented in Canadian big 5 banks' financial earnings calls. This innovative tool is your personal analyst, breaking down financial jargon and data into understandable insights, making it easier for you to make informed decisions.
+🤖 AlphaBot is designed to simplify the way you interact with and understand the vast amount of information presented in Canadian big 5 banks' financial earnings calls. This innovative tool is your personal analyst, breaking down financial jargon and data into understandable insights, making it easier for you to make informed decisions.  
 
 ## Features
 
